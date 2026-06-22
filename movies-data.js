@@ -236,7 +236,7 @@ const movies = [
     genre: "Приключения, Семейный",
     status: "Анонс",
     poster: "posters/20.jpg",
-    trailer: "https://rutube.ru/video/310421aa8a60ad4a8be507336697169b/",
+    trailer: "https://www.youtube.com/watch?v=tTtftyuS680&t=13s",
     description: "Игровая адаптация знаменитого мультфильма Disney."
 },
 
