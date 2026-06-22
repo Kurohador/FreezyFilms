@@ -20,7 +20,7 @@ const movies = [
     genre: "Фантастика, Боевик",
     status: "Вышел",
     poster: "posters/2.jpg",
-    trailer: "trailers/2.mp4",
+    trailer: "https://rutube.ru/video/bc7454c98f876b7e519ae2f6ca693719/",
     description: "Бывший боксер и его сын участвуют в боях гигантских роботов."
 },
 
@@ -32,7 +32,7 @@ const movies = [
     genre: "Фантастика, Приключения",
     status: "Вышел",
     poster: "posters/3.jpg",
-    trailer: "trailers/3.mp4",
+    trailer: "https://rutube.ru/video/fe7091148b2ff0d71e77474ab00edeec/",
     description: "Продолжение истории Джейка Салли и народа На'ви."
 },
 
@@ -44,7 +44,7 @@ const movies = [
     genre: "Фантастика, Приключения",
     status: "Анонс",
     poster: "posters/4.jpg",
-    trailer: "trailers/4.mp4",
+    trailer: "https://rutube.ru/video/b8eb936c319a4511634ee316c6598ff4/",
     description: "Новая глава вселенной Аватара с неизвестными племенами Пандоры."
 },
 
@@ -56,7 +56,7 @@ const movies = [
     genre: "Боевик, Криминал",
     status: "Вышел",
     poster: "posters/5.jpg",
-    trailer: "trailers/5.mp4",
+    trailer: "https://rutube.ru/video/74fb252e6f3a0e6eaedb0909dc6eaf29/",
     description: "Бэтмен сталкивается со своим главным врагом — Джокером."
 },
 
@@ -68,7 +68,7 @@ const movies = [
     genre: "Боевик, Комедия",
     status: "Вышел",
     poster: "posters/6.jpg",
-    trailer: "trailers/6.mp4",
+    trailer: "https://rutube.ru/video/f893c0764662db0b17b277d15d6e0871/",
     description: "Самый безумный дуэт Marvel отправляется спасать мультивселенную."
 },
 
@@ -80,7 +80,7 @@ const movies = [
     genre: "Спорт, Драма",
     status: "Анонс",
     poster: "posters/7.jpg",
-    trailer: "trailers/7.mp4",
+    trailer: "https://rutube.ru/video/b1b4e04d3ddac97959e7766d47f1b7fb/",
     description: "Фильм о мире королевских гонок Формулы-1."
 },
 
@@ -188,7 +188,7 @@ const movies = [
     genre: "Приключения, Фантастика",
     status: "Анонс",
     poster: "posters/16.jpg",
-    trailer: "trailers/16.mp4",
+    trailer: "https://rutube.ru/video/2a383da742d48178bef6300d22e370df/",
     description: "Новая история во вселенной динозавров."
 },
 
@@ -212,7 +212,7 @@ const movies = [
     genre: "Фантастика, Приключения",
     status: "Анонс",
     poster: "posters/18.jpg",
-    trailer: "trailers/18.mp4",
+    trailer: "https://rutube.ru/video/1d24b6dbc7c0eb18e2e3245135ce3b9d/",
     description: "Полнометражное приключение героев вселенной Звездных войн."
 },
 
@@ -224,7 +224,7 @@ const movies = [
     genre: "Фантастика, Боевик",
     status: "Анонс",
     poster: "posters/19.jpg",
-    trailer: "trailers/19.mp4",
+    trailer: "https://rutube.ru/video/8a301ed4dafec595bc4d9e691f08462c/",
     description: "История одного из самых опасных злодеев Marvel."
 },
 
@@ -236,7 +236,7 @@ const movies = [
     genre: "Приключения, Семейный",
     status: "Анонс",
     poster: "posters/20.jpg",
-    trailer: "trailers/20.mp4",
+    trailer: "https://rutube.ru/video/310421aa8a60ad4a8be507336697169b/",
     description: "Игровая адаптация знаменитого мультфильма Disney."
 },
 
@@ -248,7 +248,7 @@ const movies = [
     genre: "Триллер",
     status: "Анонс",
     poster: "posters/21.jpg",
-    trailer: "trailers/21.mp4",
+    trailer: "https://rutube.ru/video/9d10c08cec737e0e8e4afd8e7d069bdc/",
     description: "Напряженная история о времени, которого остается все меньше."
 },
 
@@ -272,7 +272,7 @@ const movies = [
     genre: "Фантастика, Ужасы",
     status: "Анонс",
     poster: "posters/23.jpg",
-    trailer: "trailers/23.mp4",
+    trailer: "https://rutube.ru/video/ffc10d0931c45bfdf766d9e013d379a9/",
     description: "Новая охота легендарного Хищника."
 },
 
@@ -284,7 +284,7 @@ const movies = [
     genre: "Фантастика",
     status: "Анонс",
     poster: "posters/24.jpg",
-    trailer: "trailers/24.mp4",
+    trailer: "https://rutube.ru/video/516cf6f25f65121ccde92ef30cd9b164/",
     description: "Ученые пытаются предотвратить глобальную катастрофу."
 },
 
@@ -308,7 +308,7 @@ const movies = [
     genre: "Фантастика, Боевик",
     status: "Анонс",
     poster: "posters/26.jpg",
-    trailer: "trailers/26.mp4",
+    trailer: "https://rutube.ru/video/f1726ef2aa94ab9cdf5bcb41c727975a/",
     description: "Новая глава истории Питера Паркера."
 },
 
@@ -332,7 +332,7 @@ const movies = [
     genre: "Мелодрама",
     status: "Анонс",
     poster: "posters/28.jpg",
-    trailer: "trailers/28.mp4",
+    trailer: "https://rutube.ru/video/a70a230d17028ca4562fefa1237cb003/",
     description: "Романтическая история о любви и сложном выборе."
 },
 
