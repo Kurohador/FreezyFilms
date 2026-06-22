@@ -92,7 +92,7 @@ const movies = [
     genre: "Военный, Боевик",
     status: "Вышел",
     poster: "posters/8.jpg",
-    trailer: "trailers/8.mp4",
+    trailer: "https://rutube.ru/video/079373cd9c5b74461b058fda392917a7/",
     description: "Экипаж американского танка выполняет опасную миссию в конце Второй мировой войны."
 },
 
@@ -104,7 +104,7 @@ const movies = [
     genre: "Драма, Спорт",
     status: "Вышел",
     poster: "posters/9.jpg",
-    trailer: "trailers/9.mp4",
+    trailer: "https://rutube.ru/video/e6bbbf93df5677ceb955b6f533a91f1c/",
     description: "Легендарное противостояние Ford и Ferrari на гонке Ле-Ман."
 },
 
@@ -116,7 +116,7 @@ const movies = [
     genre: "Фантастика, Боевик",
     status: "Вышел",
     poster: "posters/10.jpg",
-    trailer: "trailers/10.mp4",
+    trailer: "https://rutube.ru/video/c24e045793e8aa7a92707b896fc4dbbd/",
     description: "Годзилла и Конг объединяются против новой угрозы."
 },
 
@@ -128,7 +128,7 @@ const movies = [
     genre: "Драма, Фэнтези",
     status: "Вышел",
     poster: "posters/11.jpg",
-    trailer: "trailers/11.mp4",
+    trailer: "https://rutube.ru/video/55798f675920950add8082a2e8174794/",
     description: "История надзирателя тюрьмы и заключенного с необычным даром."
 },
 
@@ -140,7 +140,7 @@ const movies = [
     genre: "Фантастика, Драма",
     status: "Вышел",
     poster: "posters/12.jpg",
-    trailer: "trailers/12.mp4",
+    trailer: "https://rutube.ru/video/854ce20ade387f87041ca1e29e002448/",
     description: "Команда исследователей отправляется через червоточину в поисках нового дома для человечества."
 },
 
@@ -152,7 +152,7 @@ const movies = [
     genre: "Ужасы, Триллер",
     status: "Вышел",
     poster: "posters/13.jpg",
-    trailer: "trailers/13.mp4",
+    trailer: "https://rutube.ru/video/f613521df54efe04934aea0739d33f29/",
     description: "Группа подростков сталкивается с древним злом, скрывающимся под обликом клоуна."
 },
 
@@ -164,7 +164,7 @@ const movies = [
     genre: "Вестерн, Драма",
     status: "Вышел",
     poster: "posters/14.jpg",
-    trailer: "trailers/14.mp4",
+    trailer: "https://rutube.ru/video/413bac447799c7176268aeee63ba0760/",
     description: "Бывший раб отправляется спасать свою жену."
 },
 
@@ -176,7 +176,7 @@ const movies = [
     genre: "Боевик, Криминал",
     status: "Вышел",
     poster: "posters/15.jpg",
-    trailer: "trailers/15.mp4",
+    trailer: "https://vkvideo.ru/video-217672812_456239412",
     description: "Легендарный киллер становится целью для всего преступного мира."
 },
 
@@ -200,7 +200,7 @@ const movies = [
     genre: "Комедия",
     status: "Вышел",
     poster: "posters/17.jpg",
-    trailer: "trailers/17.mp4",
+    trailer: "https://rutube.ru/video/8b48949e8652bac3722b2aecfa7bddc9/",
     description: "Новые безумные приключения друзей после очередной вечеринки."
 },
 
@@ -260,7 +260,7 @@ const movies = [
     genre: "Военный, Драма",
     status: "Вышел",
     poster: "posters/22.jpg",
-    trailer: "trailers/22.mp4",
+    trailer: "https://rutube.ru/video/6330e05a80485cd7287f9c80f9b95683/",
     description: "История военного медика, отказавшегося брать оружие."
 },
 
@@ -296,7 +296,7 @@ const movies = [
     genre: "Фантастика, Боевик",
     status: "Вышел",
     poster: "posters/25.jpg",
-    trailer: "trailers/25.mp4",
+    trailer: "https://rutube.ru/video/56e9f42cc3758227f7b8cd7f73f786c8/",
     description: "Гигантские роботы сражаются против чудовищ из океана."
 },
 
@@ -320,7 +320,7 @@ const movies = [
     genre: "Военный, Боевик",
     status: "Вышел",
     poster: "posters/27.jpg",
-    trailer: "trailers/27.mp4",
+    trailer: "https://rutube.ru/video/01fe1a28fe290fecd82f29783730113b/",
     description: "Советские танкисты готовят дерзкий побег из немецкого плена."
 },
 
@@ -344,7 +344,7 @@ const movies = [
     genre: "Фэнтези, Боевик",
     status: "Вышел",
     poster: "posters/29.jpg",
-    trailer: "trailers/29.mp4",
+    trailer: "https://rutube.ru/video/2fe03b45e24cff41f99f011d5109782a/",
     description: "Люди и орки сталкиваются в борьбе за судьбу Азерота."
 },
 
@@ -356,7 +356,7 @@ const movies = [
     genre: "Фэнтези, Семейный",
     status: "Вышел",
     poster: "posters/30.jpg",
-    trailer: "trailers/30.mp4",
+    trailer: "https://rutube.ru/video/4359442a94657a7ea671d397685725f5/",
     description: "История молодого Вилли Вонки до открытия знаменитой шоколадной фабрики."
 }
 
