@@ -8,7 +8,7 @@ const movies = [
     genre: "Драма, Комедия",
     status: "Вышел",
     poster: "posters/1.jpg",
-    trailer: "trailers/1.mp4",
+    trailer: "https://rutube.ru/video/ef82e51fad7c2e57cfbe134fcd44e301/",
     description: "История дружбы богатого аристократа и молодого помощника из неблагополучного района."
 },
 
