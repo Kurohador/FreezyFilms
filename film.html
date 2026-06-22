@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freezy Films — Главная</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="movies-data.js"></script>
+</head>
+<body>
+  <div class="page-layout">
+    <header class="top-banner">
+      <div class="container top-banner__inner">
+        <div class="top-banner__auth">
+          <a class="auth-button auth-button--login" href="index.html">Вход</a>
+          <a class="auth-button auth-button--register" href="index.html">Регистрация</a>
+        </div>
+
+        <div class="top-banner__brand">
+          <div class="brand-logo brand-logo--large">
+            <img src="logo.png" alt="Логотип Freezy Films" />
+          </div>
+
+          <div class="brand-text">
+            <h1 class="brand-text__title">Freezy Films</h1>
+            <p class="brand-text__subtitle">Ледяная атмосфера кино</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="top-navbar">
+      <div class="container top-navbar__inner">
+        <div class="top-navbar__brand">
+          <div class="brand-logo brand-logo--small">
+            <img src="logo.png" alt="Логотип Freezy Films" />
+          </div>
+          <span class="top-navbar__brand-name">Freezy Films</span>
+        </div>
+
+        <nav class="main-navigation">
+  <a class="main-navigation__link" href="index.html">Главная</a>
+  <a class="main-navigation__link" href="movie.html">Фильмы</a>
+  <a
+    class="main-navigation__link"
+    href="#"
+    id="randomMovieBtn"
+>
+    Случайное
+</a>
+</nav>
+      </div>
+    </div>
+
+    <div class="floating-header" id="floatingHeader">
+      <div class="container floating-header__inner">
+        <div class="floating-header__brand">
+          <div class="brand-logo brand-logo--small">
+            <img src="logo.png" alt="Логотип Freezy Films" />
+          </div>
+          <span class="floating-header__brand-name">Freezy Films</span>
+        </div>
+
+        <input
+          class="search-input search-input--compact"
+          type="text"
+          placeholder="Найти фильм"
+        />
+
+        <nav class="floating-navigation">
+  <a class="floating-navigation__link" href="index.html">Главная</a>
+  <a class="floating-navigation__link" href="movie.html">Фильмы</a>
+  <a
+    class="floating-navigation__link"
+    href="#"
+    id="randomMovieBtnFloat"
+>
+    Случайное
+</a>
+</nav>
+
+        <div class="floating-header__auth">
+          <a class="auth-button auth-button--login auth-button--compact" href="index.html">Вход</a>
+          <a class="auth-button auth-button--register auth-button--compact" href="index.html">Регистрация</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="container main-content">
+      
+<section class="film-page">
+
+    <div class="film-page__poster">
+        <img id="filmPoster">
+    </div>
+
+    <div class="film-page__info">
+
+        <h1 id="filmTitle" class="film-page__title"></h1>
+
+        <div class="film-page__meta">
+
+            <div class="film-page__meta-item">
+                Год:
+                <span id="filmYear"></span>
+            </div>
+
+            <div class="film-page__meta-item">
+                Жанр:
+                <span id="filmGenre"></span>
+            </div>
+
+            <div class="film-page__meta-item">
+                Рейтинг:
+                <span id="filmRating"></span>
+            </div>
+            <div class="film-page__meta-item">
+                Статус:
+            <span id="filmStatus"></span>
+            </div>
+
+        </div>
+
+        <div id="filmDescription"
+             class="film-page__description">
+        </div>
+
+        <button class="watch-button" id="watchBtn">
+    Смотреть фильм
+        </button>
+        <div class="video-player" id="playerSection">
+
+    <h2 class="video-player__title">
+        Онлайн просмотр
+    </h2>
+
+    <video
+        id="filmTrailer"
+        class="video-player__video"
+        controls
+        preload="metadata"
+    >
+        Ваш браузер не поддерживает видео.
+    </video>
+
+</div>
+
+    </div>
+
+</section>
+<section class="content-panel catalog-panel">
+
+    <div class="section-header section-header--small">
+        <h2 class="section-header__title">
+            Похожие фильмы
+        </h2>
+    </div>
+
+    <div class="similar-movies-slider" id="similarMovies">
+</div>
+
+</section>
+            </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__column">
+          <h4>Наши ресурсы</h4>
+          <p>Соцсети, новости, партнерские ссылки.</p>
+        </div>
+
+        <div class="site-footer__column">
+          <h4>Информация о сайте</h4>
+          <p>О проекте Freezy Films и его развитии.</p>
+        </div>
+
+        <div class="site-footer__column">
+          <h4>Поддержка и помощь</h4>
+          <p>Частые вопросы, контакты, обратная связь.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="movies-data.js"></script>
+<script src="film.js"></script>
+</body>
+</html>

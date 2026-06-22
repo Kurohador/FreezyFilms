@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freezy Films — Главная</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-layout">
+    <header class="top-banner">
+      <div class="container top-banner__inner">
+        <div class="top-banner__auth">
+          <a class="auth-button auth-button--login" href="index.html">Вход</a>
+          <a class="auth-button auth-button--register" href="index.html">Регистрация</a>
+        </div>
+
+        <div class="top-banner__brand">
+          <div class="brand-logo brand-logo--large">
+            <img src="logo.png" alt="Логотип Freezy Films" />
+          </div>
+
+          <div class="brand-text">
+            <h1 class="brand-text__title">Freezy Films</h1>
+            <p class="brand-text__subtitle">Ледяная атмосфера кино</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="top-navbar">
+      <div class="container top-navbar__inner">
+        <div class="top-navbar__brand">
+          <div class="brand-logo brand-logo--small">
+            <img src="logo.png" alt="Логотип Freezy Films" />
+          </div>
+          <span class="top-navbar__brand-name">Freezy Films</span>
+        </div>
+
+        <nav class="main-navigation">
+  <a class="main-navigation__link main-navigation__link--active" href="index.html">Главная</a>
+  <a class="main-navigation__link" href="movie.html">Фильмы</a>
+  <a
+    class="main-navigation__link"
+    href="#"
+    id="randomMovieBtn"
+>
+    Случайное
+</a>
+</nav>
+      </div>
+    </div>
+
+    <div class="floating-header" id="floatingHeader">
+      <div class="container floating-header__inner">
+        <div class="floating-header__brand">
+          <div class="brand-logo brand-logo--small">
+            <img src="logo.png" alt="Логотип Freezy Films" />
+          </div>
+          <span class="floating-header__brand-name">Freezy Films</span>
+        </div>
+
+        <input
+          id="headerSearchInput"
+          class="search-input search-input--compact"
+          type="text"
+          placeholder="Найти фильм"
+        />
+
+        <nav class="floating-navigation">
+  <a class="floating-navigation__link floating-navigation__link--active" href="index.html">Главная</a>
+  <a class="floating-navigation__link" href="movie.html">Фильмы</a>
+  <a
+    class="floating-navigation__link"
+    href="#"
+    id="randomMovieBtnFloat"
+>
+    Случайное
+</a>
+</nav>
+
+        <div class="floating-header__auth">
+          <a class="auth-button auth-button--login auth-button--compact" href="index.html">Вход</a>
+          <a class="auth-button auth-button--register auth-button--compact" href="index.html">Регистрация</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="container main-content">
+      <section class="search-panel">
+        <div class="search-panel__row">
+          <input
+    id="searchInput"
+    class="search-panel__input"
+    type="text"
+    placeholder="Найти фильм по названию"
+/>
+
+          <div class="filter-box">
+            <button class="search-panel__button" id="filterToggle" type="button">
+              Раскрыть фильтр
+            </button>
+
+            <div class="filter-popup" id="filterPanel">
+              <div class="filter-popup__header">РАСКРЫТЬ ФИЛЬТР</div>
+
+              <div class="filter-popup__body">
+                <div class="filter-group">
+                  <label class="filter-label">Выбрать жанры</label>
+                  <div class="multi-select" data-filter="includeGenres">
+                    <button class="multi-select__trigger" type="button">
+                      <span class="multi-select__text">По каким жанрам искать</span>
+                      <span class="multi-select__icon">+</span>
+                    </button>
+                    <div class="multi-select__dropdown">
+                      <label><input type="checkbox" value="Боевик"> Боевик</label>
+                      <label><input type="checkbox" value="Драма"> Драма</label>
+                      <label><input type="checkbox" value="Комедия"> Комедия</label>
+                      <label><input type="checkbox" value="Фантастика"> Фантастика</label>
+                      <label><input type="checkbox" value="Триллер"> Триллер</label>
+                      <label><input type="checkbox" value="Ужасы"> Ужасы</label>
+                      <label><input type="checkbox" value="Детектив"> Детектив</label>
+                      <label><input type="checkbox" value="Фэнтези"> Фэнтези</label>
+                      <label><input type="checkbox" value="Приключения"> Приключения</label>
+                      <label><input type="checkbox" value="Спорт"> Спорт</label>
+                      <label><input type="checkbox" value="Военный"> Военный</label>
+                      <label><input type="checkbox" value="Криминал"> Криминал</label>
+                      <label><input type="checkbox" value="Вестерн"> Вестерн</label>
+                      <label><input type="checkbox" value="Семейный"> Семейный</label>
+                      <label><input type="checkbox" value="Мелодрама"> Мелодрама</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-group">
+                  <label class="filter-label">Исключить жанры</label>
+                  <div class="multi-select" data-filter="excludeGenres">
+                    <button class="multi-select__trigger" type="button">
+                      <span class="multi-select__text">Какие жанры исключить</span>
+                      <span class="multi-select__icon">+</span>
+                    </button>
+                    <div class="multi-select__dropdown">
+                      <label><input type="checkbox" value="Боевик"> Боевик</label>
+                      <label><input type="checkbox" value="Драма"> Драма</label>
+                      <label><input type="checkbox" value="Комедия"> Комедия</label>
+                      <label><input type="checkbox" value="Фантастика"> Фантастика</label>
+                      <label><input type="checkbox" value="Триллер"> Триллер</label>
+                      <label><input type="checkbox" value="Ужасы"> Ужасы</label>
+                      <label><input type="checkbox" value="Детектив"> Детектив</label>
+                      <label><input type="checkbox" value="Фэнтези"> Фэнтези</label>
+                      <label><input type="checkbox" value="Приключения"> Приключения</label>
+                      <label><input type="checkbox" value="Спорт"> Спорт</label>
+                      <label><input type="checkbox" value="Военный"> Военный</label>
+                      <label><input type="checkbox" value="Криминал"> Криминал</label>
+                      <label><input type="checkbox" value="Вестерн"> Вестерн</label>
+                      <label><input type="checkbox" value="Семейный"> Семейный</label>
+                      <label><input type="checkbox" value="Мелодрама"> Мелодрама</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-group">
+                  <label class="filter-label">Статус</label>
+                  <select class="filter-select" id="statusFilter">
+                    <option value="">Статус</option>
+                    <option value="Вышел">Вышел</option>
+                    <option value="Анонс">Анонс</option>
+                  </select>
+                </div>
+
+                <div class="filter-group">
+                  <label class="filter-label">Год</label>
+                  <div class="year-range">
+                    <input class="filter-input" type="number" id="yearFrom" placeholder="от">
+                    <input class="filter-input" type="number" id="yearTo" placeholder="до">
+                  </div>
+                </div>
+
+                <div class="filter-group">
+                  <label class="filter-label">Сортировать по</label>
+                  <select class="filter-select" id="sortFilter">
+                    <option value="relevance">Релевантности</option>
+                    <option value="title">Названию (А-Я)</option>
+                    <option value="year">Дате выхода</option>
+                    <option value="rating">Рейтингу</option>
+                  </select>
+                </div>
+
+                <div class="filter-actions">
+                  <button class="filter-actions__apply" id="filterApply" type="button">ИСКАТЬ</button>
+                  <button class="filter-actions__small" id="filterReset" type="button">✕</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-panel hero-panel">
+        <div class="section-header">
+          <h2 class="section-header__title">Новинки и анонсы</h2>
+        </div>
+
+        <div class="hero-panel__grid"
+     id="heroTrack">
+</div>
+      </section>
+
+      <section class="updates-layout">
+        <section class="content-panel updates-panel">
+          <div class="section-header section-header--small">
+    <h3 class="section-header__title">
+        Обновления фильмов
+    </h3>
+</div>
+<ul class="updates-list">
+<li class="updates-list__item">
+    <span class="updates-list__date">19 Июн</span>
+    <div class="updates-list__content">
+        <strong>Зеленая миля</strong>
+        <p>Добавлен постер фильма</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">18 Июн</span>
+    <div class="updates-list__content">
+        <strong>Джон Уик 3</strong>
+        <p>Добавлен трейлер</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">17 Июн</span>
+    <div class="updates-list__content">
+        <strong>Ford против Ferrari</strong>
+        <p>Обновлена информация о фильме</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">16 Июн</span>
+    <div class="updates-list__content">
+        <strong>Ярость</strong>
+        <p>Добавлено описание фильма</p>
+    </div>
+</li>
+<li class="updates-list__item">
+    <span class="updates-list__date">15 Июн</span>
+    <div class="updates-list__content">
+        <strong>Т-34</strong>
+        <p>Добавлен трейлер</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">14 Июн</span>
+    <div class="updates-list__content">
+        <strong>Вонка</strong>
+        <p>Обновлено описание фильма</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">13 Июн</span>
+    <div class="updates-list__content">
+        <strong>Warcraft</strong>
+        <p>Добавлен постер фильма</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">12 Июн</span>
+    <div class="updates-list__content">
+        <strong>Моана</strong>
+        <p>Добавлена страница фильма</p>
+    </div>
+</li>
+
+</ul>
+        </section>
+
+        <section class="content-panel updates-panel">
+          <div class="section-header section-header--small">
+    <h3 class="section-header__title">
+        Новости сайта
+    </h3>
+</div>
+<ul class="updates-list">
+<li class="updates-list__item">
+    <span class="updates-list__date">19 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Обновлен дизайн страницы фильма</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">18 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Добавлены постеры для каталога</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">17 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Добавлена система фильтрации</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">16 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Настроена навигация между страницами</p>
+    </div>
+</li>
+<li class="updates-list__item">
+    <span class="updates-list__date">15 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Оптимизирована скорость загрузки страниц</p>
+    </div>
+</li>
+
+<li class="updates-list__item">
+    <span class="updates-list__date">14 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Улучшен адаптивный интерфейс для мобильных устройств</p>
+    </div>
+</li>
+<li class="updates-list__item">
+    <span class="updates-list__date">13 Июн</span>
+    <div class="updates-list__content">
+        <strong>Freezy Films</strong>
+        <p>Добавлена поддержка каталога из 30 фильмов</p>
+    </div>
+</li>
+
+</ul>
+        </section>
+      </section>
+
+      <section class="content-panel catalog-panel">
+        <div class="section-header section-header--small">
+          <h2 class="section-header__title">Все фильмы</h2>
+        </div>
+
+        <div class="catalog-scroll">
+          <div class="catalog-grid" id="moviesGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__column">
+          <h4>Наши ресурсы</h4>
+          <p>Соцсети, новости, партнерские ссылки.</p>
+        </div>
+
+        <div class="site-footer__column">
+          <h4>Информация о сайте</h4>
+          <p>О проекте Freezy Films и его развитии.</p>
+        </div>
+
+        <div class="site-footer__column">
+          <h4>Поддержка и помощь</h4>
+          <p>Частые вопросы, контакты, обратная связь.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+<script src="movies-data.js"></script>
+<script src="script.js"></script>
+<script src="movie.js"></script>
+</body>
+</html>
