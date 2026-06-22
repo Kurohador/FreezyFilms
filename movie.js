@@ -128,9 +128,6 @@ function getFilteredMovies() {
 
     }
 
-
-    // ВКЛЮЧЕННЫЕ ЖАНРЫ
-
     if (selectedGenres.length) {
 
         filteredMovies = filteredMovies.filter(movie =>
@@ -140,9 +137,6 @@ function getFilteredMovies() {
         );
 
     }
-
-
-    // ИСКЛЮЧЕННЫЕ ЖАНРЫ
 
     if (excludedGenres.length) {
 
@@ -154,9 +148,6 @@ function getFilteredMovies() {
 
     }
 
-
-    // СТАТУС
-
     if (status) {
 
         filteredMovies = filteredMovies.filter(movie =>
@@ -164,9 +155,6 @@ function getFilteredMovies() {
         );
 
     }
-
-
-    // ГОД ОТ
 
     if (yearFrom) {
 
@@ -176,9 +164,6 @@ function getFilteredMovies() {
 
     }
 
-
-    // ГОД ДО
-
     if (yearTo) {
 
         filteredMovies = filteredMovies.filter(movie =>
@@ -186,9 +171,6 @@ function getFilteredMovies() {
         );
 
     }
-
-
-    // СОРТИРОВКА
 
     switch (sort) {
 
